@@ -1,0 +1,268 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header__wrapper">
+          <a href="index.html" class="header__logo">
+            <img src="images/sitelogo.svg" alt="" aria-hidden="true" />
+            <span>Job Portal</span>
+          </a>
+          <nav class="header__nav">
+            <ul class="header__list">
+              <li class="header__item">
+                <a href="index.html">Home</a>
+              </li>
+              <li class="header__item">
+                <a href="jobs.html">Jobs</a>
+              </li>
+              <li class="header__item is-active">
+                <a href="about.html">About Us</a>
+              </li>
+              <li class="header__item">
+                <a href="contact.html">Contact Us</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="header__actions">
+            <a href="#">Login</a>
+            <a class="button button--primary" href="#">Register</a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="page-hero">
+        <div class="container">
+          <div class="page-hero__inner">
+            <h1 class="page-hero__title">Contact Us</h1>
+          </div>
+        </div>
+      </section>
+      <section class="contact">
+        <div class="container">
+          <div class="contact__wrapper">
+            <div class="contact__info">
+              <div class="contact__header">
+                <h2 class="contact__title">
+                  You Will Grow, You Will Succeed. We Promise That
+                </h2>
+                <p class="contact__desc">
+                  Pellentesque arcu facilisis nunc mi proin. Dignissim mattis in
+                  lectus tincidunt tincidunt ultrices. Diam convallis morbi
+                  pellentesque adipiscing
+                </p>
+              </div>
+              <div class="contact__content">
+                <ul class="contact__list">
+                  <li class="contact__item">
+                    <img class="contact__img" src="images/phone.svg" alt="" />
+                    <h3 class="contact__heading">Call for inquiry</h3>
+                    <a class="contact__value" href="tel:+2573886895"
+                      >+257 388-6895</a
+                    >
+                  </li>
+                  <li class="contact__item">
+                    <img class="contact__img" src="images/email.svg" alt="" />
+                    <h3 class="contact__heading">Send us email</h3>
+                    <a
+                      class="contact__value"
+                      href="mailto:kramulous@sbcglobal.net"
+                      >kramulous@sbcglobal.net</a
+                    >
+                  </li>
+                  <li class="contact__item">
+                    <img class="contact__img" src="images/clock.svg" alt="" />
+                    <h3 class="contact__heading">Opening hours</h3>
+                    <p class="contact__value">Mon - Fri: 10AM - 10PM</p>
+                  </li>
+                  <li class="contact__item">
+                    <img
+                      class="contact__img"
+                      src="images/location.svg"
+                      alt=""
+                    />
+                    <h3 class="contact__heading">Office</h3>
+                    <address class="contact__value">
+                      19 North Road Piscataway, NY 08854
+                    </address>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <form class="contact-form">
+              <header class="contact-form__header">
+                <h2 class="contact-form__title">Contact Info</h2>
+
+                <p class="contact-form__desc">
+                  Nibh dis faucibus proin lacus tristique
+                </p>
+              </header>
+              <div class="contact-form__body">
+                <div class="contact-form__content">
+                  <div class="contact-form__row">
+                    <div class="contact-form__field">
+                      <label class="contact-form__label" for="first-name">
+                        First Name
+                      </label>
+
+                      <input
+                        id="first-name"
+                        class="contact-form__input"
+                        type="text"
+                        placeholder="Your name"
+                      />
+                    </div>
+                    <div class="contact-form__field">
+                      <label class="contact-form__label" for="last-name">
+                        Last Name
+                      </label>
+
+                      <input
+                        id="last-name"
+                        class="contact-form__input"
+                        type="text"
+                        placeholder="Your last name"
+                      />
+                    </div>
+                  </div>
+                  <div class="contact-form__field">
+                    <label class="contact-form__label" for="email">
+                      Email Address
+                    </label>
+
+                    <input
+                      id="email"
+                      type="email"
+                      class="contact-form__input"
+                      placeholder="Your E-mail address"
+                    />
+                  </div>
+                  <div class="contact-form__field">
+                    <label class="contact-form__label" for="message">
+                      Message
+                    </label>
+                    <textarea
+                      id="message"
+                      class="contact-form__textarea"
+                      placeholder="Your message..."
+                    ></textarea>
+                  </div>
+                </div>
+                <button type="submit" class="button button--primary">
+                  Send Message
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+      <section class="map">
+        <div class="container">
+          <div class="map__wrapper">
+            <iframe
+              class="map__frame"
+              src="..."
+              title="Job Portal office location"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+      </section>
+      <section class="contact-company">
+        <div class="container">
+          <ul class="contact-company__logos">
+            <li class="contact-company__logo">
+              <img src="images/zoom.svg" alt="Zoom" />
+            </li>
+            <li class="contact-company__logo">
+              <img src="images/tinder.svg" alt="Tinder" />
+            </li>
+            <li class="contact-company__logo">
+              <img src="images/dribbble.svg" alt="Dribbble" />
+            </li>
+            <li class="contact-company__logo">
+              <img src="images/asana.svg" alt="Asana" />
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__wrapper">
+          <div class="footer__col footer__col--brand">
+            <div class="footer__logo">
+              <img src="images/sitelogo.svg" alt="" />
+              <span>Job</span>
+            </div>
+            <p class="footer__desc">
+              Quis enim pellentesque viverra tellus eget malesuada facilisis.
+              Congue nibh vivamus aliquet nunc mauris du
+            </p>
+          </div>
+
+          <div class="footer__col">
+            <h3 class="footer__title">Company</h3>
+            <ul class="footer__list">
+              <li><a href="#" class="footer__link">About Us</a></li>
+              <li><a href="#" class="footer__link">Our Team</a></li>
+              <li><a href="#" class="footer__link">Partners</a></li>
+              <li><a href="#" class="footer__link">For Candidates</a></li>
+              <li><a href="#" class="footer__link">For Employers</a></li>
+            </ul>
+          </div>
+          <div class="footer__col">
+            <h3 class="footer__title">Job Categories</h3>
+            <ul class="footer__list">
+              <li><a href="#" class="footer__link">Telecomunications</a></li>
+              <li><a href="#" class="footer__link">Hotels & Tourism</a></li>
+              <li><a href="#" class="footer__link">Construction</a></li>
+              <li><a href="#" class="footer__link">Education</a></li>
+              <li><a href="#" class="footer__link">Financial Services</a></li>
+            </ul>
+          </div>
+          <div class="footer__col">
+            <h3 class="footer__title">Newsletter</h3>
+
+            <div class="footer__content">
+              <p class="footer__news-desc">
+                Eu nunc pretium vitae platea. Non netus elementum vulputate
+              </p>
+              <input
+                id="newsletter-email"
+                type="email"
+                placeholder="Email Address"
+              />
+              <a class="button button--primary" href="#">Subscribe now</a>
+            </div>
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <p class="footer__copy">
+            © Copyright Job Portal 2024. Designed by Figma.guru
+          </p>
+          <div class="footer__addition">
+            <a href="#" class="footer__privacy">Privacy Policy</a>
+            <a href="#" class="footer__terms">Terms & Conditions</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
