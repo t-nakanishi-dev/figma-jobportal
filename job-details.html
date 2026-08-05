@@ -4,7 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Job Details</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/base.css" />
+    <link rel="stylesheet" href="./css/components.css" />
+    <link rel="stylesheet" href="./css/layout.css" />
+    <link rel="stylesheet" href="./css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -39,7 +43,7 @@
           </nav>
           <div class="header__actions">
             <a href="#">Login</a>
-            <a class="button button--primary" href="#">Register</a>
+            <a class="button" href="#">Register</a>
           </div>
         </div>
       </div>
@@ -59,16 +63,20 @@
           <div class="job-details__wrapper">
             <header class="job-details__header">
               <div class="jobs__item">
-                <div class="jobs__top">
-                  <div class="jobs__time">
+                <div class="job-card__top">
+                  <div class="badge">
                     <span>10 min ago</span>
                   </div>
-                  <div class="jobs__favorite">
+                  <button
+                    class="jobs__favorite"
+                    type="button"
+                    aria-label="Add to favorites"
+                  >
                     <img src="images/plus.svg" alt="" />
-                  </div>
+                  </button>
                 </div>
 
-                <div class="jobs__main">
+                <div class="job-card__main">
                   <img src="images/jobs-4.svg" alt="" />
                   <div class="jobs__contents">
                     <p class="jobs__title">Corporate Solutions Executive</p>
@@ -77,29 +85,27 @@
                 </div>
 
                 <div class="jobs__bottom">
-                  <ul class="jobs__meta">
-                    <li class="jobs__meta-item">
+                  <ul class="job-card__meta">
+                    <li class="job-card__meta-item">
                       <img src="images/bag.svg" alt="" />
                       <span>Commerce</span>
                     </li>
-                    <li class="jobs__meta-item">
+                    <li class="job-card__meta-item">
                       <img src="images/clock.svg" alt="" />
                       <span>Full time</span>
                     </li>
-                    <li class="jobs__meta-item">
+                    <li class="job-card__meta-item">
                       <img src="images/wallet.svg" alt="" />
                       <span>$40000-$42000</span>
                     </li>
-                    <li class="jobs__meta-item">
+                    <li class="job-card__meta-item">
                       <img src="images/location.svg" alt="" />
                       <span>New-York, USA</span>
                     </li>
                   </ul>
 
                   <div class="jobs__details">
-                    <a class="button button--primary" href="job-details.html"
-                      >Apply Job</a
-                    >
+                    <a class="button" href="job-details.html">Apply Job</a>
                   </div>
                 </div>
               </div>
@@ -272,163 +278,172 @@
                 <div class="related-jobs__body">
                   <ul class="jobs__list">
                     <li class="jobs__item">
-                      <div class="jobs__top">
-                        <div class="jobs__time">
-                          <span>15 min ago</span>
-                        </div>
-                        <div class="jobs__favorite">
-                          <img src="images/plus.svg" alt="" />
-                        </div>
-                      </div>
-                      <div class="jobs__main">
-                        <img src="images/jobs-7.svg" alt="" />
-                        <div class="jobs__contents">
-                          <p class="jobs__title">
-                            Internal Integration Planner
-                          </p>
-                          <p class="jobs__subtitle">
-                            Mraz, Quigley and Feest Inc.
-                          </p>
-                        </div>
-                      </div>
-                      <div class="jobs__bottom">
-                        <ul class="jobs__meta">
-                          <li class="jobs__meta-item">
-                            <img src="images/bag.svg" alt="" />
-                            <span>Construction</span>
-                          </li>
-
-                          <li class="jobs__meta-item">
-                            <img src="images/clock.svg" alt="" />
-                            <span>Full time</span>
-                          </li>
-
-                          <li class="jobs__meta-item">
-                            <img src="images/wallet.svg" alt="" />
-                            <span>$48000-$50000</span>
-                          </li>
-
-                          <li class="jobs__meta-item">
-                            <img src="images/location.svg" alt="" />
-                            <span>Texas, USA</span>
-                          </li>
-                        </ul>
-
-                        <div class="jobs__details">
-                          <a
-                            class="button button--primary"
-                            href="job-details.html"
+                      <article class="job-card">
+                        <div class="job-card__top">
+                          <div class="badge">
+                            <span>15 min ago</span>
+                          </div>
+                          <button
+                            class="jobs__favorite"
+                            type="button"
+                            aria-label="Add to favorites"
                           >
-                            Job Details
-                          </a>
+                            <img src="images/plus.svg" alt="" />
+                          </button>
                         </div>
-                      </div>
+                        <div class="job-card__main">
+                          <img src="images/jobs-7.svg" alt="" />
+                          <div class="jobs__contents">
+                            <p class="jobs__title">
+                              Internal Integration Planner
+                            </p>
+                            <p class="jobs__subtitle">
+                              Mraz, Quigley and Feest Inc.
+                            </p>
+                          </div>
+                        </div>
+                        <div class="jobs__bottom">
+                          <ul class="job-card__meta">
+                            <li class="job-card__meta-item">
+                              <img src="images/bag.svg" alt="" />
+                              <span>Construction</span>
+                            </li>
+
+                            <li class="job-card__meta-item">
+                              <img src="images/clock.svg" alt="" />
+                              <span>Full time</span>
+                            </li>
+
+                            <li class="job-card__meta-item">
+                              <img src="images/wallet.svg" alt="" />
+                              <span>$48000-$50000</span>
+                            </li>
+
+                            <li class="job-card__meta-item">
+                              <img src="images/location.svg" alt="" />
+                              <span>Texas, USA</span>
+                            </li>
+                          </ul>
+
+                          <div class="jobs__details">
+                            <a class="button" href="job-details.html">
+                              Job Details
+                            </a>
+                          </div>
+                        </div>
+                      </article>
                     </li>
                     <li class="jobs__item">
-                      <div class="jobs__top">
-                        <div class="jobs__time">
-                          <span>15 min ago</span>
-                        </div>
-                        <div class="jobs__favorite">
-                          <img src="images/plus.svg" alt="" />
-                        </div>
-                      </div>
-                      <div class="jobs__main">
-                        <img src="images/jobs-4.svg" alt="" />
-                        <div class="jobs__contents">
-                          <p class="jobs__title">
-                            Internal Integration Planner
-                          </p>
-                          <p class="jobs__subtitle">
-                            Mraz, Quigley and Feest Inc.
-                          </p>
-                        </div>
-                      </div>
-                      <div class="jobs__bottom">
-                        <ul class="jobs__meta">
-                          <li class="jobs__meta-item">
-                            <img src="images/bag.svg" alt="" />
-                            <span>Construction</span>
-                          </li>
-
-                          <li class="jobs__meta-item">
-                            <img src="images/clock.svg" alt="" />
-                            <span>Full time</span>
-                          </li>
-
-                          <li class="jobs__meta-item">
-                            <img src="images/wallet.svg" alt="" />
-                            <span>$48000-$50000</span>
-                          </li>
-
-                          <li class="jobs__meta-item">
-                            <img src="images/location.svg" alt="" />
-                            <span>Texas, USA</span>
-                          </li>
-                        </ul>
-
-                        <div class="jobs__details">
-                          <a
-                            class="button button--primary"
-                            href="job-details.html"
+                      <article class="job-card">
+                        <div class="job-card__top">
+                          <div class="badge">
+                            <span>15 min ago</span>
+                          </div>
+                          <button
+                            class="jobs__favorite"
+                            type="button"
+                            aria-label="Add to favorites"
                           >
-                            Job Details
-                          </a>
+                            <img src="images/plus.svg" alt="" />
+                          </button>
                         </div>
-                      </div>
+                        <div class="job-card__main">
+                          <img src="images/jobs-4.svg" alt="" />
+                          <div class="jobs__contents">
+                            <p class="jobs__title">
+                              Internal Integration Planner
+                            </p>
+                            <p class="jobs__subtitle">
+                              Mraz, Quigley and Feest Inc.
+                            </p>
+                          </div>
+                        </div>
+                        <div class="jobs__bottom">
+                          <ul class="job-card__meta">
+                            <li class="job-card__meta-item">
+                              <img src="images/bag.svg" alt="" />
+                              <span>Construction</span>
+                            </li>
+
+                            <li class="job-card__meta-item">
+                              <img src="images/clock.svg" alt="" />
+                              <span>Full time</span>
+                            </li>
+
+                            <li class="job-card__meta-item">
+                              <img src="images/wallet.svg" alt="" />
+                              <span>$48000-$50000</span>
+                            </li>
+
+                            <li class="job-card__meta-item">
+                              <img src="images/location.svg" alt="" />
+                              <span>Texas, USA</span>
+                            </li>
+                          </ul>
+
+                          <div class="jobs__details">
+                            <a class="button" href="job-details.html">
+                              Job Details
+                            </a>
+                          </div>
+                        </div>
+                      </article>
                     </li>
                     <li class="jobs__item">
-                      <div class="jobs__top">
-                        <div class="jobs__time">
-                          <span>15 min ago</span>
-                        </div>
-                        <div class="jobs__favorite">
-                          <img src="images/plus.svg" alt="" />
-                        </div>
-                      </div>
-                      <div class="jobs__main">
-                        <img src="images/jobs-5.svg" alt="" />
-                        <div class="jobs__contents">
-                          <p class="jobs__title">
-                            Internal Integration Planner
-                          </p>
-                          <p class="jobs__subtitle">
-                            Mraz, Quigley and Feest Inc.
-                          </p>
-                        </div>
-                      </div>
-                      <div class="jobs__bottom">
-                        <ul class="jobs__meta">
-                          <li class="jobs__meta-item">
-                            <img src="images/bag.svg" alt="" />
-                            <span>Construction</span>
-                          </li>
-
-                          <li class="jobs__meta-item">
-                            <img src="images/clock.svg" alt="" />
-                            <span>Full time</span>
-                          </li>
-
-                          <li class="jobs__meta-item">
-                            <img src="images/wallet.svg" alt="" />
-                            <span>$48000-$50000</span>
-                          </li>
-
-                          <li class="jobs__meta-item">
-                            <img src="images/location.svg" alt="" />
-                            <span>Texas, USA</span>
-                          </li>
-                        </ul>
-
-                        <div class="jobs__details">
-                          <a
-                            class="button button--primary"
-                            href="job-details.html"
+                      <article class="job-card">
+                        <div class="job-card__top">
+                          <div class="badge">
+                            <span>15 min ago</span>
+                          </div>
+                          <button
+                            class="jobs__favorite"
+                            type="button"
+                            aria-label="Add to favorites"
                           >
-                            Job Details
-                          </a>
+                            <img src="images/plus.svg" alt="" />
+                          </button>
                         </div>
-                      </div>
+                        <div class="job-card__main">
+                          <img src="images/jobs-5.svg" alt="" />
+                          <div class="jobs__contents">
+                            <p class="jobs__title">
+                              Internal Integration Planner
+                            </p>
+                            <p class="jobs__subtitle">
+                              Mraz, Quigley and Feest Inc.
+                            </p>
+                          </div>
+                        </div>
+                        <div class="jobs__bottom">
+                          <ul class="job-card__meta">
+                            <li class="job-card__meta-item">
+                              <img src="images/bag.svg" alt="" />
+                              <span>Construction</span>
+                            </li>
+
+                            <li class="job-card__meta-item">
+                              <img src="images/clock.svg" alt="" />
+                              <span>Full time</span>
+                            </li>
+
+                            <li class="job-card__meta-item">
+                              <img src="images/wallet.svg" alt="" />
+                              <span>$48000-$50000</span>
+                            </li>
+
+                            <li class="job-card__meta-item">
+                              <img src="images/location.svg" alt="" />
+                              <span>Texas, USA</span>
+                            </li>
+                          </ul>
+
+                          <div class="jobs__details">
+                            <a class="button" href="job-details.html">
+                              Job Details
+                            </a>
+                          </div>
+                        </div>
+                      </article>
                     </li>
                   </ul>
                 </div>
@@ -602,7 +617,7 @@
                     ></textarea>
                   </div>
 
-                  <button class="button button--primary">Send Message</button>
+                  <button class="button">Send Message</button>
                 </form>
               </section>
             </aside>
@@ -656,7 +671,7 @@
                 type="email"
                 placeholder="Email Address"
               />
-              <a class="button button--primary" href="#">Subscribe now</a>
+              <a class="button" href="#">Subscribe now</a>
             </div>
           </div>
         </div>

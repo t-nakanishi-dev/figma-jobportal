@@ -4,7 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Jobs</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/base.css" />
+    <link rel="stylesheet" href="./css/components.css" />
+    <link rel="stylesheet" href="./css/layout.css" />
+    <link rel="stylesheet" href="./css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -39,7 +43,7 @@
           </nav>
           <div class="header__actions">
             <a href="#">Login</a>
-            <a class="button button--primary" href="#">Register</a>
+            <a class="button" href="#">Register</a>
           </div>
         </div>
       </div>
@@ -344,25 +348,25 @@
                 <div class="job-filter__group">
                   <h3 class="job-filter__title">Tags</h3>
                   <ul class="job-filter__tags">
-                    <li class="job-filter__tag">
+                    <li class="badge">
                       <a href="#">engineering</a>
                     </li>
-                    <li class="job-filter__tag">
+                    <li class="badge">
                       <a href="#">design</a>
                     </li>
-                    <li class="job-filter__tag">
+                    <li class="badge">
                       <a href="#">ui/ux</a>
                     </li>
-                    <li class="job-filter__tag">
+                    <li class="badge">
                       <a href="#">marketing</a>
                     </li>
-                    <li class="job-filter__tag">
+                    <li class="badge">
                       <a href="#">management</a>
                     </li>
-                    <li class="job-filter__tag">
+                    <li class="badge">
                       <a href="#">soft</a>
                     </li>
-                    <li class="job-filter__tag">
+                    <li class="badge">
                       <a href="#">construction</a>
                     </li>
                   </ul>
@@ -397,278 +401,316 @@
 
               <ul class="jobs__list">
                 <li class="jobs__item">
-                  <div class="jobs__top">
-                    <div class="jobs__time">
-                      <span>10 min ago</span>
-                    </div>
-                    <div class="jobs__favorite">
-                      <img src="images/plus.svg" alt="" />
-                    </div>
-                  </div>
-
-                  <div class="jobs__main">
-                    <img src="images/jobs-1.svg" alt="" />
-                    <div class="jobs__contents">
-                      <p class="jobs__title">Forward Security Director</p>
-                      <p class="jobs__subtitle">
-                        Bauch, Schuppe and Schulist Co
-                      </p>
-                    </div>
-                  </div>
-
-                  <div class="jobs__bottom">
-                    <ul class="jobs__meta">
-                      <li class="jobs__meta-item">
-                        <img src="images/bag.svg" alt="" />
-                        <span>Hotels & Tourism</span>
-                      </li>
-                      <li class="jobs__meta-item">
-                        <img src="images/clock.svg" alt="" />
-                        <span>Full time</span>
-                      </li>
-                      <li class="jobs__meta-item">
-                        <img src="images/wallet.svg" alt="" />
-                        <span>$40000-$42000</span>
-                      </li>
-                      <li class="jobs__meta-item">
-                        <img src="images/location.svg" alt="" />
-                        <span>New-York, USA</span>
-                      </li>
-                    </ul>
-
-                    <div class="jobs__details">
-                      <a class="button button--primary" href="job-details.html"
-                        >Job Details</a
+                  <article class="job-card">
+                    <div class="job-card__top">
+                      <div class="badge">
+                        <span>10 min ago</span>
+                      </div>
+                      <button
+                        class="jobs__favorite"
+                        type="button"
+                        aria-label="Add to favorites"
                       >
+                        <img src="images/plus.svg" alt="" />
+                      </button>
                     </div>
-                  </div>
+
+                    <div class="job-card__main">
+                      <img src="images/jobs-1.svg" alt="" />
+                      <div class="jobs__contents">
+                        <p class="jobs__title">Forward Security Director</p>
+                        <p class="jobs__subtitle">
+                          Bauch, Schuppe and Schulist Co
+                        </p>
+                      </div>
+                    </div>
+
+                    <div class="jobs__bottom">
+                      <ul class="job-card__meta">
+                        <li class="job-card__meta-item">
+                          <img src="images/bag.svg" alt="" />
+                          <span>Hotels & Tourism</span>
+                        </li>
+                        <li class="job-card__meta-item">
+                          <img src="images/clock.svg" alt="" />
+                          <span>Full time</span>
+                        </li>
+                        <li class="job-card__meta-item">
+                          <img src="images/wallet.svg" alt="" />
+                          <span>$40000-$42000</span>
+                        </li>
+                        <li class="job-card__meta-item">
+                          <img src="images/location.svg" alt="" />
+                          <span>New-York, USA</span>
+                        </li>
+                      </ul>
+
+                      <div class="jobs__details">
+                        <a class="button" href="job-details.html"
+                          >Job Details</a
+                        >
+                      </div>
+                    </div>
+                  </article>
                 </li>
                 <li class="jobs__item">
-                  <div class="jobs__top">
-                    <div class="jobs__time">
-                      <span>12 min ago</span>
-                    </div>
-                    <div class="jobs__favorite">
-                      <img src="images/plus.svg" alt="" />
-                    </div>
-                  </div>
-
-                  <div class="jobs__main">
-                    <img src="images/jobs-2.svg" alt="" />
-                    <div class="jobs__contents">
-                      <p class="jobs__title">Regional Creative Facilitator</p>
-                      <p class="jobs__subtitle">Wisozk - Becker Co</p>
-                    </div>
-                  </div>
-
-                  <div class="jobs__bottom">
-                    <ul class="jobs__meta">
-                      <li class="jobs__meta-item">
-                        <img src="images/bag.svg" alt="" />
-                        <span>Media</span>
-                      </li>
-                      <li class="jobs__meta-item">
-                        <img src="images/clock.svg" alt="" />
-                        <span>Part time</span>
-                      </li>
-                      <li class="jobs__meta-item">
-                        <img src="images/wallet.svg" alt="" />
-                        <span>$28000-$32000</span>
-                      </li>
-                      <li class="jobs__meta-item">
-                        <img src="images/location.svg" alt="" />
-                        <span>Los- Angeles, USA</span>
-                      </li>
-                    </ul>
-
-                    <div class="jobs__details">
-                      <a class="button button--primary" href="job-details.html"
-                        >Job Details</a
+                  <article class="job-card">
+                    <div class="job-card__top">
+                      <div class="badge">
+                        <span>12 min ago</span>
+                      </div>
+                      <button
+                        class="jobs__favorite"
+                        type="button"
+                        aria-label="Add to favorites"
                       >
+                        <img src="images/plus.svg" alt="" />
+                      </button>
                     </div>
-                  </div>
+
+                    <div class="job-card__main">
+                      <img src="images/jobs-2.svg" alt="" />
+                      <div class="jobs__contents">
+                        <p class="jobs__title">Regional Creative Facilitator</p>
+                        <p class="jobs__subtitle">Wisozk - Becker Co</p>
+                      </div>
+                    </div>
+
+                    <div class="jobs__bottom">
+                      <ul class="job-card__meta">
+                        <li class="job-card__meta-item">
+                          <img src="images/bag.svg" alt="" />
+                          <span>Media</span>
+                        </li>
+                        <li class="job-card__meta-item">
+                          <img src="images/clock.svg" alt="" />
+                          <span>Part time</span>
+                        </li>
+                        <li class="job-card__meta-item">
+                          <img src="images/wallet.svg" alt="" />
+                          <span>$28000-$32000</span>
+                        </li>
+                        <li class="job-card__meta-item">
+                          <img src="images/location.svg" alt="" />
+                          <span>Los- Angeles, USA</span>
+                        </li>
+                      </ul>
+
+                      <div class="jobs__details">
+                        <a class="button" href="job-details.html"
+                          >Job Details</a
+                        >
+                      </div>
+                    </div>
+                  </article>
                 </li>
                 <li class="jobs__item">
-                  <div class="jobs__top">
-                    <div class="jobs__time">
-                      <span>15 min ago</span>
-                    </div>
-                    <div class="jobs__favorite">
-                      <img src="images/plus.svg" alt="" />
-                    </div>
-                  </div>
-
-                  <div class="jobs__main">
-                    <img src="images/jobs-3.svg" alt="" />
-                    <div class="jobs__contents">
-                      <p class="jobs__title">Internal Integration Planner</p>
-                      <p class="jobs__subtitle">Mraz, Quigley and Feest Inc.</p>
-                    </div>
-                  </div>
-
-                  <div class="jobs__bottom">
-                    <ul class="jobs__meta">
-                      <li class="jobs__meta-item">
-                        <img src="images/bag.svg" alt="" />
-                        <span>Construction</span>
-                      </li>
-                      <li class="jobs__meta-item">
-                        <img src="images/clock.svg" alt="" />
-                        <span>Full time</span>
-                      </li>
-                      <li class="jobs__meta-item">
-                        <img src="images/wallet.svg" alt="" />
-                        <span>$48000-$50000</span>
-                      </li>
-                      <li class="jobs__meta-item">
-                        <img src="images/location.svg" alt="" />
-                        <span>Texas, USA</span>
-                      </li>
-                    </ul>
-
-                    <div class="jobs__details">
-                      <a class="button button--primary" href="job-details.html"
-                        >Job Details</a
+                  <article class="job-card">
+                    <div class="job-card__top">
+                      <div class="badge">
+                        <span>15 min ago</span>
+                      </div>
+                      <button
+                        class="jobs__favorite"
+                        type="button"
+                        aria-label="Add to favorites"
                       >
+                        <img src="images/plus.svg" alt="" />
+                      </button>
                     </div>
-                  </div>
+
+                    <div class="job-card__main">
+                      <img src="images/jobs-3.svg" alt="" />
+                      <div class="jobs__contents">
+                        <p class="jobs__title">Internal Integration Planner</p>
+                        <p class="jobs__subtitle">
+                          Mraz, Quigley and Feest Inc.
+                        </p>
+                      </div>
+                    </div>
+
+                    <div class="jobs__bottom">
+                      <ul class="job-card__meta">
+                        <li class="job-card__meta-item">
+                          <img src="images/bag.svg" alt="" />
+                          <span>Construction</span>
+                        </li>
+                        <li class="job-card__meta-item">
+                          <img src="images/clock.svg" alt="" />
+                          <span>Full time</span>
+                        </li>
+                        <li class="job-card__meta-item">
+                          <img src="images/wallet.svg" alt="" />
+                          <span>$48000-$50000</span>
+                        </li>
+                        <li class="job-card__meta-item">
+                          <img src="images/location.svg" alt="" />
+                          <span>Texas, USA</span>
+                        </li>
+                      </ul>
+
+                      <div class="jobs__details">
+                        <a class="button" href="job-details.html"
+                          >Job Details</a
+                        >
+                      </div>
+                    </div>
+                  </article>
                 </li>
                 <li class="jobs__item">
-                  <div class="jobs__top">
-                    <div class="jobs__time">
-                      <span>24 min ago</span>
-                    </div>
-                    <div class="jobs__favorite">
-                      <img src="images/plus.svg" alt="" />
-                    </div>
-                  </div>
-
-                  <div class="jobs__main">
-                    <img src="images/jobs-4.svg" alt="" />
-                    <div class="jobs__contents">
-                      <p class="jobs__title">District Intranet Director</p>
-                      <p class="jobs__subtitle">VonRueden - Weber Co</p>
-                    </div>
-                  </div>
-
-                  <div class="jobs__bottom">
-                    <ul class="jobs__meta">
-                      <li class="jobs__meta-item">
-                        <img src="images/bag.svg" alt="" />
-                        <span>Commerce</span>
-                      </li>
-                      <li class="jobs__meta-item">
-                        <img src="images/clock.svg" alt="" />
-                        <span>Full time</span>
-                      </li>
-                      <li class="jobs__meta-item">
-                        <img src="images/wallet.svg" alt="" />
-                        <span>$42000-$48000</span>
-                      </li>
-                      <li class="jobs__meta-item">
-                        <img src="images/location.svg" alt="" />
-                        <span>Florida, USA</span>
-                      </li>
-                    </ul>
-
-                    <div class="jobs__details">
-                      <a class="button button--primary" href="job-details.html"
-                        >Job Details</a
+                  <article class="job-card">
+                    <div class="job-card__top">
+                      <div class="badge">
+                        <span>24 min ago</span>
+                      </div>
+                      <button
+                        class="jobs__favorite"
+                        type="button"
+                        aria-label="Add to favorites"
                       >
+                        <img src="images/plus.svg" alt="" />
+                      </button>
                     </div>
-                  </div>
+
+                    <div class="job-card__main">
+                      <img src="images/jobs-4.svg" alt="" />
+                      <div class="jobs__contents">
+                        <p class="jobs__title">District Intranet Director</p>
+                        <p class="jobs__subtitle">VonRueden - Weber Co</p>
+                      </div>
+                    </div>
+
+                    <div class="jobs__bottom">
+                      <ul class="job-card__meta">
+                        <li class="job-card__meta-item">
+                          <img src="images/bag.svg" alt="" />
+                          <span>Commerce</span>
+                        </li>
+                        <li class="job-card__meta-item">
+                          <img src="images/clock.svg" alt="" />
+                          <span>Full time</span>
+                        </li>
+                        <li class="job-card__meta-item">
+                          <img src="images/wallet.svg" alt="" />
+                          <span>$42000-$48000</span>
+                        </li>
+                        <li class="job-card__meta-item">
+                          <img src="images/location.svg" alt="" />
+                          <span>Florida, USA</span>
+                        </li>
+                      </ul>
+
+                      <div class="jobs__details">
+                        <a class="button" href="job-details.html"
+                          >Job Details</a
+                        >
+                      </div>
+                    </div>
+                  </article>
                 </li>
                 <li class="jobs__item">
-                  <div class="jobs__top">
-                    <div class="jobs__time">
-                      <span>26 min ago</span>
-                    </div>
-                    <div class="jobs__favorite">
-                      <img src="images/plus.svg" alt="" />
-                    </div>
-                  </div>
-
-                  <div class="jobs__main">
-                    <img src="images/jobs-5.svg" alt="" />
-                    <div class="jobs__contents">
-                      <p class="jobs__title">Corporate Tactics Facilitator</p>
-                      <p class="jobs__subtitle">
-                        Cormier, Turner and Flatley Inc
-                      </p>
-                    </div>
-                  </div>
-
-                  <div class="jobs__bottom">
-                    <ul class="jobs__meta">
-                      <li class="jobs__meta-item">
-                        <img src="images/bag.svg" alt="" />
-                        <span>Commerce</span>
-                      </li>
-                      <li class="jobs__meta-item">
-                        <img src="images/clock.svg" alt="" />
-                        <span>Full time</span>
-                      </li>
-                      <li class="jobs__meta-item">
-                        <img src="images/wallet.svg" alt="" />
-                        <span>$38000-$40000</span>
-                      </li>
-                      <li class="jobs__meta-item">
-                        <img src="images/location.svg" alt="" />
-                        <span>Boston, USA</span>
-                      </li>
-                    </ul>
-
-                    <div class="jobs__details">
-                      <a class="button button--primary" href="job-details.html"
-                        >Job Details</a
+                  <article class="job-card">
+                    <div class="job-card__top">
+                      <div class="badge">
+                        <span>26 min ago</span>
+                      </div>
+                      <button
+                        class="jobs__favorite"
+                        type="button"
+                        aria-label="Add to favorites"
                       >
+                        <img src="images/plus.svg" alt="" />
+                      </button>
                     </div>
-                  </div>
+
+                    <div class="job-card__main">
+                      <img src="images/jobs-5.svg" alt="" />
+                      <div class="jobs__contents">
+                        <p class="jobs__title">Corporate Tactics Facilitator</p>
+                        <p class="jobs__subtitle">
+                          Cormier, Turner and Flatley Inc
+                        </p>
+                      </div>
+                    </div>
+
+                    <div class="jobs__bottom">
+                      <ul class="job-card__meta">
+                        <li class="job-card__meta-item">
+                          <img src="images/bag.svg" alt="" />
+                          <span>Commerce</span>
+                        </li>
+                        <li class="job-card__meta-item">
+                          <img src="images/clock.svg" alt="" />
+                          <span>Full time</span>
+                        </li>
+                        <li class="job-card__meta-item">
+                          <img src="images/wallet.svg" alt="" />
+                          <span>$38000-$40000</span>
+                        </li>
+                        <li class="job-card__meta-item">
+                          <img src="images/location.svg" alt="" />
+                          <span>Boston, USA</span>
+                        </li>
+                      </ul>
+
+                      <div class="jobs__details">
+                        <a class="button" href="job-details.html"
+                          >Job Details</a
+                        >
+                      </div>
+                    </div>
+                  </article>
                 </li>
                 <li class="jobs__item">
-                  <div class="jobs__top">
-                    <div class="jobs__time">
-                      <span>30 min ago</span>
-                    </div>
-                    <div class="jobs__favorite">
-                      <img src="images/plus.svg" alt="" />
-                    </div>
-                  </div>
-
-                  <div class="jobs__main">
-                    <img src="images/jobs-6.svg" alt="" />
-                    <div class="jobs__contents">
-                      <p class="jobs__title">Forward Accounts Consultant</p>
-                      <p class="jobs__subtitle">Miller Group</p>
-                    </div>
-                  </div>
-
-                  <div class="jobs__bottom">
-                    <ul class="jobs__meta">
-                      <li class="jobs__meta-item">
-                        <img src="images/bag.svg" alt="" />
-                        <span>Financial services</span>
-                      </li>
-                      <li class="jobs__meta-item">
-                        <img src="images/clock.svg" alt="" />
-                        <span>Full time</span>
-                      </li>
-                      <li class="jobs__meta-item">
-                        <img src="images/wallet.svg" alt="" />
-                        <span>$45000-$48000</span>
-                      </li>
-                      <li class="jobs__meta-item">
-                        <img src="images/location.svg" alt="" />
-                        <span>Boston, USA</span>
-                      </li>
-                    </ul>
-
-                    <div class="jobs__details">
-                      <a class="button button--primary" href="job-details.html"
-                        >Job Details</a
+                  <article class="job-card">
+                    <div class="job-card__top">
+                      <div class="badge">
+                        <span>30 min ago</span>
+                      </div>
+                      <button
+                        class="jobs__favorite"
+                        type="button"
+                        aria-label="Add to favorites"
                       >
+                        <img src="images/plus.svg" alt="" />
+                      </button>
                     </div>
-                  </div>
+
+                    <div class="job-card__main">
+                      <img src="images/jobs-6.svg" alt="" />
+                      <div class="jobs__contents">
+                        <p class="jobs__title">Forward Accounts Consultant</p>
+                        <p class="jobs__subtitle">Miller Group</p>
+                      </div>
+                    </div>
+
+                    <div class="jobs__bottom">
+                      <ul class="job-card__meta">
+                        <li class="job-card__meta-item">
+                          <img src="images/bag.svg" alt="" />
+                          <span>Financial services</span>
+                        </li>
+                        <li class="job-card__meta-item">
+                          <img src="images/clock.svg" alt="" />
+                          <span>Full time</span>
+                        </li>
+                        <li class="job-card__meta-item">
+                          <img src="images/wallet.svg" alt="" />
+                          <span>$45000-$48000</span>
+                        </li>
+                        <li class="job-card__meta-item">
+                          <img src="images/location.svg" alt="" />
+                          <span>Boston, USA</span>
+                        </li>
+                      </ul>
+
+                      <div class="jobs__details">
+                        <a class="button" href="job-details.html"
+                          >Job Details</a
+                        >
+                      </div>
+                    </div>
+                  </article>
                 </li>
               </ul>
               <nav class="jobs__pagination" aria-label="Jobs pagination">
@@ -815,7 +857,7 @@
                 type="email"
                 placeholder="Email Address"
               />
-              <a class="button button--primary" href="#">Subscribe now</a>
+              <a class="button" href="#">Subscribe now</a>
             </div>
           </div>
         </div>

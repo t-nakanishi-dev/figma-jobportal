@@ -21,7 +21,6 @@ select {
   font: inherit;
 }
 button {
-  font: inherit;
   cursor: pointer;
   border: none;
   background: none;
@@ -29,7 +28,4 @@ button {
 .container {
   width: min(1300px, calc(100% - 40px));
   margin-inline: auto;
-}
-section {
-  padding-block: 60px;
 }

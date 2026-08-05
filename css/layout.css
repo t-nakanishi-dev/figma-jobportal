@@ -1,5 +1,155 @@
-.header{}
-.hero{}
-.search{}
-.jobs{}
-.footer{}
+/* header */
+.header {
+  padding-block: 26px;
+}
+.header__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__list {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.header__logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.header__actions {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+/* hero */
+.hero {
+  padding-block: 100px;
+  background-color: black;
+}
+.hero__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.hero__header {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+.hero__title {
+  font-size: 70px;
+  font-weight: 700;
+  line-height: 80px;
+  color: #fff;
+}
+.hero__subtitle {
+  font-size: 18px;
+  font-weight: 500;
+  color: #ffffff;
+}
+.hero__search {
+  display: flex;
+  height: 80px;
+  margin-bottom: 80px;
+  border-radius: 16px;
+  background: #fff;
+  gap: 20px;
+}
+.hero__search-icon {
+  width: 16px;
+  height: 16px;
+}
+.hero__fields {
+  display: flex;
+  align-items: center;
+  padding-inline: 20px;
+}
+.hero__statistics {
+  display: flex;
+  gap: 60px;
+}
+.form__input,
+.form__select {
+  height: 100%;
+  padding-inline: 20px;
+  border: none;
+  background: transparent;
+}
+.form__input {
+  width: 195px;
+}
+.form__input::placeholder {
+  color: rgba(0, 0, 0, 0.5);
+}
+.form__select {
+  width: 180px;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  color: rgba(0, 0, 0, 0.5);
+}
+.form__select-wrapper {
+  position: relative;
+  width: 180px;
+}
+.form__select-wrapper::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 1px;
+  height: 40px;
+  background: rgba(199, 199, 199, 0.6);
+}
+.form__select-icon {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+.hero__button {
+  width: 174px;
+  height: 100%;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.hero__stat {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.hero__stat-content {
+  display: flex;
+  flex-direction: column;
+}
+.hero__stat-number {
+  font-size: 20px;
+  font-weight: 700;
+  color: #ffffff;
+}
+.hero__stat-label {
+  font-size: 16px;
+  font-weight: 500;
+  color: #ffffff;
+}
+/* search */
+.search {
+}
+/* jobs */
+.jobs {
+}
+/* footer */
+.footer {
+}
