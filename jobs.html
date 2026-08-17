@@ -21,23 +21,23 @@
     <header class="header">
       <div class="container">
         <div class="header__wrapper">
-          <a href="index.html" class="header__logo">
-            <img src="images/sitelogo.svg" alt="" aria-hidden="true" />
+          <a href="#" class="header__logo">
+            <img src="images/sitelogo.svg" alt="" />
             <span>Job Portal</span>
           </a>
           <nav class="header__nav">
             <ul class="header__list">
               <li class="header__item">
-                <a href="index.html">Home</a>
-              </li>
-              <li class="header__item is-active">
-                <a href="jobs.html">Jobs</a>
+                <a href="#">Home</a>
               </li>
               <li class="header__item">
-                <a href="about.html">About Us</a>
+                <a href="#">Jobs</a>
               </li>
               <li class="header__item">
-                <a href="contact.html">Contact Us</a>
+                <a href="#">About Us</a>
+              </li>
+              <li class="header__item">
+                <a href="#">Contact Us</a>
               </li>
             </ul>
           </nav>
@@ -375,7 +375,7 @@
 
               <div class="jobs__banner">
                 <img
-                  src="images/hiring-banner.jpg"
+                  src="images/hiring-banner.webp"
                   alt=""
                   class="jobs__banner-img"
                 />
@@ -396,6 +396,12 @@
                     <option value="salary-high">Salary: High to Low</option>
                     <option value="salary-low">Salary: Low to High</option>
                   </select>
+                  <img
+                    class="jobs__sort-icon"
+                    src="images/chevron-down.svg"
+                    alt=""
+                    aria-hidden="true"
+                  />
                 </div>
               </div>
 
@@ -407,7 +413,7 @@
                         <span>10 min ago</span>
                       </div>
                       <button
-                        class="jobs__favorite"
+                        class="job-card__favorite"
                         type="button"
                         aria-label="Add to favorites"
                       >
@@ -417,15 +423,15 @@
 
                     <div class="job-card__main">
                       <img src="images/jobs-1.svg" alt="" />
-                      <div class="jobs__contents">
-                        <p class="jobs__title">Forward Security Director</p>
-                        <p class="jobs__subtitle">
+                      <div class="job-card__contents">
+                        <p class="job-card__title">Forward Security Director</p>
+                        <p class="job-card__subtitle">
                           Bauch, Schuppe and Schulist Co
                         </p>
                       </div>
                     </div>
 
-                    <div class="jobs__bottom">
+                    <div class="job-card__bottom">
                       <ul class="job-card__meta">
                         <li class="job-card__meta-item">
                           <img src="images/bag.svg" alt="" />
@@ -460,7 +466,7 @@
                         <span>12 min ago</span>
                       </div>
                       <button
-                        class="jobs__favorite"
+                        class="job-card__favorite"
                         type="button"
                         aria-label="Add to favorites"
                       >
@@ -470,13 +476,15 @@
 
                     <div class="job-card__main">
                       <img src="images/jobs-2.svg" alt="" />
-                      <div class="jobs__contents">
-                        <p class="jobs__title">Regional Creative Facilitator</p>
-                        <p class="jobs__subtitle">Wisozk - Becker Co</p>
+                      <div class="job-card__contents">
+                        <p class="job-card__title">
+                          Regional Creative Facilitator
+                        </p>
+                        <p class="job-card__subtitle">Wisozk - Becker Co</p>
                       </div>
                     </div>
 
-                    <div class="jobs__bottom">
+                    <div class="job-card__bottom">
                       <ul class="job-card__meta">
                         <li class="job-card__meta-item">
                           <img src="images/bag.svg" alt="" />
@@ -496,7 +504,7 @@
                         </li>
                       </ul>
 
-                      <div class="jobs__details">
+                      <div class="job-card__details">
                         <a class="button" href="job-details.html"
                           >Job Details</a
                         >
@@ -511,7 +519,7 @@
                         <span>15 min ago</span>
                       </div>
                       <button
-                        class="jobs__favorite"
+                        class="job-card__favorite"
                         type="button"
                         aria-label="Add to favorites"
                       >
@@ -521,15 +529,17 @@
 
                     <div class="job-card__main">
                       <img src="images/jobs-3.svg" alt="" />
-                      <div class="jobs__contents">
-                        <p class="jobs__title">Internal Integration Planner</p>
-                        <p class="jobs__subtitle">
+                      <div class="job-card__contents">
+                        <p class="job-card__title">
+                          Internal Integration Planner
+                        </p>
+                        <p class="job-card__subtitle">
                           Mraz, Quigley and Feest Inc.
                         </p>
                       </div>
                     </div>
 
-                    <div class="jobs__bottom">
+                    <div class="job-card__bottom">
                       <ul class="job-card__meta">
                         <li class="job-card__meta-item">
                           <img src="images/bag.svg" alt="" />
@@ -549,7 +559,7 @@
                         </li>
                       </ul>
 
-                      <div class="jobs__details">
+                      <div class="job-card__details">
                         <a class="button" href="job-details.html"
                           >Job Details</a
                         >
@@ -564,7 +574,7 @@
                         <span>24 min ago</span>
                       </div>
                       <button
-                        class="jobs__favorite"
+                        class="job-card__favorite"
                         type="button"
                         aria-label="Add to favorites"
                       >
@@ -574,13 +584,15 @@
 
                     <div class="job-card__main">
                       <img src="images/jobs-4.svg" alt="" />
-                      <div class="jobs__contents">
-                        <p class="jobs__title">District Intranet Director</p>
-                        <p class="jobs__subtitle">VonRueden - Weber Co</p>
+                      <div class="job-card__contents">
+                        <p class="job-card__title">
+                          District Intranet Director
+                        </p>
+                        <p class="job-card__subtitle">VonRueden - Weber Co</p>
                       </div>
                     </div>
 
-                    <div class="jobs__bottom">
+                    <div class="job-card__bottom">
                       <ul class="job-card__meta">
                         <li class="job-card__meta-item">
                           <img src="images/bag.svg" alt="" />
@@ -600,7 +612,7 @@
                         </li>
                       </ul>
 
-                      <div class="jobs__details">
+                      <div class="job-card__details">
                         <a class="button" href="job-details.html"
                           >Job Details</a
                         >
@@ -615,7 +627,7 @@
                         <span>26 min ago</span>
                       </div>
                       <button
-                        class="jobs__favorite"
+                        class="job-card__favorite"
                         type="button"
                         aria-label="Add to favorites"
                       >
@@ -625,15 +637,17 @@
 
                     <div class="job-card__main">
                       <img src="images/jobs-5.svg" alt="" />
-                      <div class="jobs__contents">
-                        <p class="jobs__title">Corporate Tactics Facilitator</p>
-                        <p class="jobs__subtitle">
+                      <div class="job-card__contents">
+                        <p class="job-card__title">
+                          Corporate Tactics Facilitator
+                        </p>
+                        <p class="job-card__subtitle">
                           Cormier, Turner and Flatley Inc
                         </p>
                       </div>
                     </div>
 
-                    <div class="jobs__bottom">
+                    <div class="job-card__bottom">
                       <ul class="job-card__meta">
                         <li class="job-card__meta-item">
                           <img src="images/bag.svg" alt="" />
@@ -653,7 +667,7 @@
                         </li>
                       </ul>
 
-                      <div class="jobs__details">
+                      <div class="job-card__details">
                         <a class="button" href="job-details.html"
                           >Job Details</a
                         >
@@ -668,7 +682,7 @@
                         <span>30 min ago</span>
                       </div>
                       <button
-                        class="jobs__favorite"
+                        class="job-card__favorite"
                         type="button"
                         aria-label="Add to favorites"
                       >
@@ -678,13 +692,15 @@
 
                     <div class="job-card__main">
                       <img src="images/jobs-6.svg" alt="" />
-                      <div class="jobs__contents">
-                        <p class="jobs__title">Forward Accounts Consultant</p>
-                        <p class="jobs__subtitle">Miller Group</p>
+                      <div class="job-card__contents">
+                        <p class="job-card__title">
+                          Forward Accounts Consultant
+                        </p>
+                        <p class="job-card__subtitle">Miller Group</p>
                       </div>
                     </div>
 
-                    <div class="jobs__bottom">
+                    <div class="job-card__bottom">
                       <ul class="job-card__meta">
                         <li class="job-card__meta-item">
                           <img src="images/bag.svg" alt="" />
@@ -704,7 +720,7 @@
                         </li>
                       </ul>
 
-                      <div class="jobs__details">
+                      <div class="job-card__details">
                         <a class="button" href="job-details.html"
                           >Job Details</a
                         >
@@ -721,12 +737,18 @@
                   <li>
                     <a href="#" class="jobs__pagination-link">2</a>
                   </li>
-                  <li>
+                  <li class="jobs__pagination-next-item">
                     <a
                       href="#"
                       class="jobs__pagination-link jobs__pagination-next"
-                      >Next &gt;</a
                     >
+                      Next
+                      <img
+                        src="images/chevron-right.svg"
+                        alt=""
+                        aria-hidden="true"
+                      />
+                    </a>
                   </li>
                 </ul>
               </nav>
@@ -814,60 +836,62 @@
     <footer class="footer">
       <div class="container">
         <div class="footer__wrapper">
-          <div class="footer__col footer__col--brand">
-            <div class="footer__logo">
-              <img src="images/sitelogo.svg" alt="" />
-              <span>Job</span>
+          <div class="footer__top">
+            <div class="footer__col footer__col--brand">
+              <div class="footer__logo">
+                <img src="images/sitelogo.svg" alt="" />
+                <span class="footer__title">Job</span>
+              </div>
+              <p class="footer__desc">
+                Quis enim pellentesque viverra tellus eget malesuada facilisis.
+                Congue nibh vivamus aliquet nunc mauris du
+              </p>
             </div>
-            <p class="footer__desc">
-              Quis enim pellentesque viverra tellus eget malesuada facilisis.
-              Congue nibh vivamus aliquet nunc mauris du
-            </p>
-          </div>
 
-          <div class="footer__col">
-            <h3 class="footer__title">Company</h3>
-            <ul class="footer__list">
-              <li><a href="#" class="footer__link">About Us</a></li>
-              <li><a href="#" class="footer__link">Our Team</a></li>
-              <li><a href="#" class="footer__link">Partners</a></li>
-              <li><a href="#" class="footer__link">For Candidates</a></li>
-              <li><a href="#" class="footer__link">For Employers</a></li>
-            </ul>
-          </div>
-          <div class="footer__col">
-            <h3 class="footer__title">Job Categories</h3>
-            <ul class="footer__list">
-              <li><a href="#" class="footer__link">Telecomunications</a></li>
-              <li><a href="#" class="footer__link">Hotels & Tourism</a></li>
-              <li><a href="#" class="footer__link">Construction</a></li>
-              <li><a href="#" class="footer__link">Education</a></li>
-              <li><a href="#" class="footer__link">Financial Services</a></li>
-            </ul>
-          </div>
-          <div class="footer__col">
-            <h3 class="footer__title">Newsletter</h3>
+            <div class="footer__col footer__col--company">
+              <h3 class="footer__title">Company</h3>
+              <ul class="footer__list">
+                <li><a href="#" class="footer__link">About Us</a></li>
+                <li><a href="#" class="footer__link">Our Team</a></li>
+                <li><a href="#" class="footer__link">Partners</a></li>
+                <li><a href="#" class="footer__link">For Candidates</a></li>
+                <li><a href="#" class="footer__link">For Employers</a></li>
+              </ul>
+            </div>
+            <div class="footer__col footer__col--category">
+              <h3 class="footer__title">Job Categories</h3>
+              <ul class="footer__list">
+                <li><a href="#" class="footer__link">Telecomunications</a></li>
+                <li><a href="#" class="footer__link">Hotels & Tourism</a></li>
+                <li><a href="#" class="footer__link">Construction</a></li>
+                <li><a href="#" class="footer__link">Education</a></li>
+                <li><a href="#" class="footer__link">Financial Services</a></li>
+              </ul>
+            </div>
+            <div class="footer__col footer__col--news">
+              <h3 class="footer__title">Newsletter</h3>
 
-            <div class="footer__content">
               <p class="footer__news-desc">
                 Eu nunc pretium vitae platea. Non netus elementum vulputate
               </p>
               <input
+                class="footer__input"
                 id="newsletter-email"
                 type="email"
                 placeholder="Email Address"
               />
-              <a class="button" href="#">Subscribe now</a>
+              <a class="button footer__button" href="#">Subscribe now</a>
             </div>
           </div>
-        </div>
-        <div class="footer__bottom">
-          <p class="footer__copy">
-            © Copyright Job Portal 2024. Designed by Figma.guru
-          </p>
-          <div class="footer__addition">
-            <a href="#" class="footer__privacy">Privacy Policy</a>
-            <a href="#" class="footer__terms">Terms & Conditions</a>
+
+          <div class="footer__bottom">
+            <p class="footer__copy">
+              © Copyright Job Portal 2024. Designed by Figma.guru
+            </p>
+            <div class="footer__addition">
+              <a href="#" class="footer__privacy">Privacy Policy</a>
+              <a href="#" class="footer__terms">Terms & Conditions</a>
+            </div>
           </div>
         </div>
       </div>

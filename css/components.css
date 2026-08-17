@@ -54,7 +54,7 @@
 }
 .job-card__main {
   display: flex;
-  gap: 11px;
+  gap: 20px;
 }
 .job-card__contents {
   display: flex;
@@ -84,6 +84,7 @@
   display: flex;
   align-items: center;
   gap: 12px;
+  color: #4b5563;
 }
 .job-card__favorite {
   display: flex;
