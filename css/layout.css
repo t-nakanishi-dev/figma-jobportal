@@ -205,9 +205,6 @@
   gap: 24px;
 }
 
-.jobs__item {
-  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
-}
 /* =========================
    Category Section
 ========================= */
@@ -682,12 +679,12 @@
 ========================= */
 .page-hero {
   background-color: #000;
-  padding-block: 80px;
+  padding-block: 140px;
   text-align: center;
 }
 
 .page-hero__title {
-  font-size: 70px;
+  font-size: 60px;
   font-weight: 700;
   line-height: 1.1;
   color: #fff;
@@ -1226,3 +1223,327 @@
   font-size: 14px;
   font-weight: 600;
 }
+/* =========================
+   Job Details Page
+========================= */
+.job-details {
+  padding-block: 60px 100px;
+}
+
+.job-details__wrapper {
+  display: grid;
+  grid-template-columns: 1fr 340px;
+  gap: 40px;
+  align-items: start;
+}
+
+/* ---------- Header (求人タイトル部分) ---------- */
+.job-details__header {
+  grid-column: 1 / -1; /* 全幅 */
+  margin-bottom: 40px;
+}
+
+.job-details__header .jobs__item {
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 32px 40px;
+}
+
+.job-details__header .jobs__bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 24px;
+  flex-wrap: wrap;
+  margin-top: 24px;
+}
+
+.job-details__header .jobs__details .button {
+  min-width: 160px;
+}
+
+/* ---------- Content (左カラム) ---------- */
+.job-details__content {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+.job-details__body {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.job-details__group {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.job-details__title {
+  font-size: 24px;
+  font-weight: 600;
+  color: #000;
+}
+
+.job-details__group p {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.7;
+  color: #000;
+}
+
+/* リスト（Key Responsibilities / Professional Skills） */
+.job-details__list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.job-details__item {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.job-details__item img {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+  margin-top: 3px;
+}
+
+.job-details__description {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.6;
+  color: #4b5563;
+}
+
+/* Tags */
+.job-tag__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.job-tag__list .badge {
+  padding: 8px 12px;
+  border-radius: 12px;
+  font-weight: 500;
+}
+
+/* Share */
+.job-share__list {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.job-share__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+  transition: opacity 0.3s;
+}
+
+.job-share__link:hover {
+  opacity: 0.7;
+}
+
+.job-share__link img {
+  width: 20px;
+  height: 20px;
+}
+
+/* ---------- Sidebar (右カラム) ---------- */
+.job-details__sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  top: 60px;
+}
+
+/* Job Overview */
+.job-overview {
+  background-color: #ebf5f4;
+  border-radius: 20px;
+  padding: 28px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.job-overview__title {
+  font-size: 18px;
+  font-weight: 700;
+  color: #000;
+}
+
+.job-overview__list {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.job-overview__item {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.job-overview__icon {
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+}
+
+.job-overview__content {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.job-overview__label {
+  font-size: 16px;
+  font-weight: 500;
+  color: #000;
+  line-height: 1;
+}
+
+.job-overview__value {
+  font-size: 16px;
+  font-weight: 500;
+  color: #4b5563;
+  line-height: 1;
+}
+
+/* Map */
+.job-overview-map__wrapper {
+  border-radius: 12px;
+  overflow: hidden;
+  aspect-ratio: 16 / 10;
+  background-color: #e5e7eb;
+}
+
+.job-overview-map__frame {
+  width: 100%;
+  height: 100%;
+  border: none;
+  display: block;
+}
+
+/* Send Us Message */
+.job-message {
+  background-color: #ebf5f4;
+  border-radius: 20px;
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.job-message__title {
+  font-size: 20px;
+  font-weight: 600;
+  color: #000;
+}
+
+.job-message__form {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.job-message__field {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.job-message__icon {
+  position: absolute;
+  left: 12px;
+  width: 20px;
+  height: 20px;
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+.job-message__input,
+.job-message__textarea {
+  width: 100%;
+  padding: 14px 16px 14px 48px;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-radius: 12px;
+  background-color: #fff;
+  font-size: 15px;
+  color: #1e1e1e;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.job-message__input:focus,
+.job-message__textarea:focus {
+  border-color: #309689;
+}
+
+.job-message__field--textarea {
+  align-items: flex-start;
+}
+
+.job-message__field--textarea .job-message__icon {
+  top: 18px;
+}
+
+.job-message__textarea {
+  min-height: 120px;
+  resize: vertical;
+  padding-top: 16px;
+}
+
+.job-message__button {
+  width: fit-content;
+  align-self: flex-start;
+}
+
+/* ---------- Related Jobs ---------- */
+.related-jobs {
+  padding-block: 60px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.related-jobs__header {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.related-jobs__title {
+  font-size: 50px;
+  font-weight: 600;
+  color: #000;
+}
+
+.related-jobs__desc {
+  font-size: 16px;
+  font-weight: 500;
+  color: #000;
+}
+
+.related-jobs__body .jobs__list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* .related-jobs__body .job-card {
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
+} */
