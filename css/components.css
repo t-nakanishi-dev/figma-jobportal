@@ -4,11 +4,19 @@
 .button {
   display: inline-flex;
   align-items: center;
-  padding: 15px 20px;
+  justify-content: center;
+  gap: 10px;
+
+  height: 40px;
+  padding-inline: 20px;
+
   border-radius: 8px;
   background-color: #309689;
-  color: #fff;
+
+  font-size: 16px;
   font-weight: 600;
+  color: #fff;
+
   transition: background-color 0.3s;
 }
 /* =========================
@@ -17,14 +25,18 @@
 .badge {
   display: inline-flex;
   align-items: center;
+
   padding: 8px;
+  border-radius: 8px;
+
   background-color: rgba(48, 150, 137, 0.1);
   color: #309689;
+
+  font-size: 16px;
   font-weight: 400;
-  transition: background-color 0.3s;
 }
 /* =========================
-   Card
+   Job Card
 ========================= */
 .job-card {
   display: flex;
@@ -35,36 +47,45 @@
   background-color: #fff;
   border-radius: 20px;
 }
-.jobs__top {
+.job-card__top {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.jobs__main {
+.job-card__main {
   display: flex;
   gap: 11px;
 }
-.jobs__contents {
+.job-card__contents {
   display: flex;
   flex-direction: column;
-  gap: 20px;
 }
-.jobs__bottom {
+.job-card__title {
+  font-size: 28px;
+  font-weight: 600;
+  color: black;
+}
+.job-card__subtitle {
+  font-size: 16px;
+  font-weight: 500;
+  color: black;
+}
+.job-card__bottom {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
 }
-.jobs__meta {
+.job-card__meta {
   display: flex;
   flex-wrap: wrap;
   gap: 40px 24px;
 }
-.jobs__meta-item {
+.job-card__meta-item {
   display: flex;
   align-items: center;
   gap: 12px;
 }
-.jobs__favorite {
+.job-card__favorite {
   display: flex;
   align-items: center;
   justify-content: center;
