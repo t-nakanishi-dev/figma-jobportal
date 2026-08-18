@@ -70,7 +70,7 @@
               volutpat. Sem quis viverra viverra odio mauris nunc.
             </p>
           </div>
-          <img class="about-intro__img" src="images/about-intro.svg" alt="" />
+          <img class="about-intro__img" src="images/about-intro.webp" alt="" />
         </div>
       </section>
       <section class="how-it-works">
@@ -142,12 +142,22 @@
       <section class="about-video">
         <div class="container">
           <div class="about-video__wrapper">
-            <div class="about-video__header">
-              <img class="about-video__icon" src="images/play.svg" alt="" />
-              <h2 class="about-video__title">
-                Good Life Begins With A Good Company
-              </h2>
+            <!-- 背景画像 + オーバーレイ部分 -->
+            <div class="about-video__visual">
+              <img
+                class="about-video__bg"
+                src="images/about-video-bg.webp"
+                alt=""
+              />
+              <div class="about-video__overlay">
+                <img class="about-video__icon" src="images/play.svg" alt="" />
+                <h2 class="about-video__title">
+                  Good Life Begins With A Good Company
+                </h2>
+              </div>
             </div>
+
+            <!-- 下部の黒い帯 -->
             <div class="about-video__body">
               <ul class="about-video__list">
                 <li class="about-video__item">
@@ -257,18 +267,18 @@
           <div class="about-best__wrapper">
             <div class="about-best__images">
               <div class="about-best__left">
-                <div class="about-best__image">
-                  <img src="images/about-best-01.jpg" alt="" />
+                <div class="about-best__left-image">
+                  <img src="images/about-best-01.webp" alt="" />
                 </div>
               </div>
 
               <div class="about-best__right">
-                <div class="about-best__image">
-                  <img src="images/about-best-02.jpg" alt="" />
+                <div class="about-best__right-image">
+                  <img src="images/about-best-02.webp" alt="" />
                 </div>
 
-                <div class="about-best__image">
-                  <img src="images/about-best-03.jpg" alt="" />
+                <div class="about-best__right-image">
+                  <img src="images/about-best-03.webp" alt="" />
                 </div>
               </div>
             </div>
@@ -336,7 +346,7 @@
       <section class="blog">
         <div class="container">
           <div class="blog__wrapper">
-            <div class="blog__header">
+            <div class="about-blog__header">
               <h2 class="blog__title">News and Blog</h2>
               <p class="blog__intro">
                 Metus faucibus sed turpis lectus feugiat tincidunt. Rhoncus sed
@@ -349,7 +359,7 @@
                   <div class="blog__heading">
                     <img
                       class="blog__image"
-                      src="images/blog-image.svg"
+                      src="images/blog-image1.webp"
                       alt=""
                     />
                     <span class="blog__genre">News</span>
@@ -374,7 +384,7 @@
                   <div class="blog__heading">
                     <img
                       class="blog__image"
-                      src="images/blog-image.svg"
+                      src="images/blog-image2.webp"
                       alt=""
                     />
                     <span class="blog__genre">Blog</span>
@@ -402,60 +412,62 @@
     <footer class="footer">
       <div class="container">
         <div class="footer__wrapper">
-          <div class="footer__col footer__col--brand">
-            <div class="footer__logo">
-              <img src="images/sitelogo.svg" alt="" />
-              <span>Job</span>
+          <div class="footer__top">
+            <div class="footer__col footer__col--brand">
+              <div class="footer__logo">
+                <img src="images/sitelogo.svg" alt="" />
+                <span class="footer__title">Job</span>
+              </div>
+              <p class="footer__desc">
+                Quis enim pellentesque viverra tellus eget malesuada facilisis.
+                Congue nibh vivamus aliquet nunc mauris du
+              </p>
             </div>
-            <p class="footer__desc">
-              Quis enim pellentesque viverra tellus eget malesuada facilisis.
-              Congue nibh vivamus aliquet nunc mauris du
-            </p>
-          </div>
 
-          <div class="footer__col">
-            <h3 class="footer__title">Company</h3>
-            <ul class="footer__list">
-              <li><a href="#" class="footer__link">About Us</a></li>
-              <li><a href="#" class="footer__link">Our Team</a></li>
-              <li><a href="#" class="footer__link">Partners</a></li>
-              <li><a href="#" class="footer__link">For Candidates</a></li>
-              <li><a href="#" class="footer__link">For Employers</a></li>
-            </ul>
-          </div>
-          <div class="footer__col">
-            <h3 class="footer__title">Job Categories</h3>
-            <ul class="footer__list">
-              <li><a href="#" class="footer__link">Telecomunications</a></li>
-              <li><a href="#" class="footer__link">Hotels & Tourism</a></li>
-              <li><a href="#" class="footer__link">Construction</a></li>
-              <li><a href="#" class="footer__link">Education</a></li>
-              <li><a href="#" class="footer__link">Financial Services</a></li>
-            </ul>
-          </div>
-          <div class="footer__col">
-            <h3 class="footer__title">Newsletter</h3>
+            <div class="footer__col footer__col--company">
+              <h3 class="footer__title">Company</h3>
+              <ul class="footer__list">
+                <li><a href="#" class="footer__link">About Us</a></li>
+                <li><a href="#" class="footer__link">Our Team</a></li>
+                <li><a href="#" class="footer__link">Partners</a></li>
+                <li><a href="#" class="footer__link">For Candidates</a></li>
+                <li><a href="#" class="footer__link">For Employers</a></li>
+              </ul>
+            </div>
+            <div class="footer__col footer__col--category">
+              <h3 class="footer__title">Job Categories</h3>
+              <ul class="footer__list">
+                <li><a href="#" class="footer__link">Telecomunications</a></li>
+                <li><a href="#" class="footer__link">Hotels & Tourism</a></li>
+                <li><a href="#" class="footer__link">Construction</a></li>
+                <li><a href="#" class="footer__link">Education</a></li>
+                <li><a href="#" class="footer__link">Financial Services</a></li>
+              </ul>
+            </div>
+            <div class="footer__col footer__col--news">
+              <h3 class="footer__title">Newsletter</h3>
 
-            <div class="footer__content">
               <p class="footer__news-desc">
                 Eu nunc pretium vitae platea. Non netus elementum vulputate
               </p>
               <input
+                class="footer__input"
                 id="newsletter-email"
                 type="email"
                 placeholder="Email Address"
               />
-              <a class="button" href="#">Subscribe now</a>
+              <a class="button footer__button" href="#">Subscribe now</a>
             </div>
           </div>
-        </div>
-        <div class="footer__bottom">
-          <p class="footer__copy">
-            © Copyright Job Portal 2024. Designed by Figma.guru
-          </p>
-          <div class="footer__addition">
-            <a href="#" class="footer__privacy">Privacy Policy</a>
-            <a href="#" class="footer__terms">Terms & Conditions</a>
+
+          <div class="footer__bottom">
+            <p class="footer__copy">
+              © Copyright Job Portal 2024. Designed by Figma.guru
+            </p>
+            <div class="footer__addition">
+              <a href="#" class="footer__privacy">Privacy Policy</a>
+              <a href="#" class="footer__terms">Terms & Conditions</a>
+            </div>
           </div>
         </div>
       </div>
