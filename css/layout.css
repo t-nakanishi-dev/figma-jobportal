@@ -1935,3 +1935,220 @@
   flex-direction: column;
   align-items: center;
 }
+/* =========================
+   Contact Us Page
+========================= */
+
+/* ---------- Contact Section ---------- */
+.contact {
+  padding-block: 60px;
+}
+
+.contact__wrapper {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 60px;
+  align-items: start;
+}
+
+/* Left: Info */
+.contact__info {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+.contact__header {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.contact__title {
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 1.2;
+  color: #000;
+}
+
+.contact__desc {
+  font-size: 16px;
+  font-weight: 500;
+  color: #000;
+  max-width: 620px;
+}
+
+.contact__list {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 60px 104px;
+}
+
+.contact__item {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.contact__img {
+  width: 28px;
+  height: 28px;
+}
+
+.contact__heading {
+  font-size: 24px;
+  font-weight: 700;
+  color: #000;
+  line-height: 1.2;
+}
+
+.contact__value {
+  font-size: 20px;
+  font-weight: 500;
+  color: #000;
+  overflow-wrap: anywhere;
+}
+
+a.contact__value:hover {
+  color: #309689;
+}
+
+/* Right: Form */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding: 60px 40px;
+  background-color: #ebf5f4;
+  border-radius: 20px;
+}
+
+.contact-form__header {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contact-form__title {
+  font-size: 28px;
+  font-weight: 700;
+  color: #000;
+}
+
+.contact-form__desc {
+  font-size: 16px;
+  font-weight: 500;
+  color: #000;
+}
+
+.contact-form__body {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.contact-form__message {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.contact-form__row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+.contact-form__field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.contact-form__label {
+  font-size: 16px;
+  font-weight: 600;
+  color: #000;
+}
+
+.contact-form__input,
+.contact-form__textarea {
+  width: 100%;
+  padding: 9px 16px;
+  border: none;
+  border-radius: 6px;
+  background-color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  color: #000;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.contact-form__input::placeholder,
+.contact-form__textarea::placeholder {
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.contact-form__input:focus,
+.contact-form__textarea:focus {
+  border-color: #309689;
+}
+
+.contact-form__textarea {
+  min-height: 140px;
+  resize: vertical;
+}
+
+.contact-form .button {
+  width: 248px;
+  height: 40px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+/* ---------- Map Section ---------- */
+.map {
+  padding-bottom: 60px;
+}
+
+.map__wrapper {
+  border-radius: 20px;
+  overflow: hidden;
+  background-color: #e5e7eb;
+}
+
+.map__frame {
+  width: 100%;
+  min-height: 420px;
+  border: none;
+  display: block;
+}
+
+/* ---------- Company Logos (Contact page) ---------- */
+.contact-company {
+  padding-block: 60px;
+}
+
+.contact-company__logos {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-inline: 60px;
+  flex-wrap: wrap;
+}
+
+.contact-company__logo {
+  transition: opacity 0.3s;
+}
+
+.contact-company__logo:hover {
+  opacity: 0.85;
+}
+
+.contact-company__logo img {
+  height: 60px;
+  width: auto;
+}
