@@ -21,23 +21,23 @@
     <header class="header">
       <div class="container">
         <div class="header__wrapper">
-          <a href="#" class="header__logo">
+          <a href="index.html" class="header__logo">
             <img src="images/sitelogo.svg" alt="" />
             <span>Job Portal</span>
           </a>
           <nav class="header__nav">
             <ul class="header__list">
               <li class="header__item">
-                <a href="#">Home</a>
+                <a href="index.html">Home</a>
+              </li>
+              <li class="header__item is-active">
+                <a href="jobs.html">Jobs</a>
               </li>
               <li class="header__item">
-                <a href="#">Jobs</a>
+                <a href="about-us.html">About Us</a>
               </li>
               <li class="header__item">
-                <a href="#">About Us</a>
-              </li>
-              <li class="header__item">
-                <a href="#">Contact Us</a>
+                <a href="contact-us.html">Contact Us</a>
               </li>
             </ul>
           </nav>
@@ -58,7 +58,7 @@
         </div>
       </section>
 
-      <section class="jobs">
+      <section class="page-jobs">
         <div class="container">
           <div class="jobs__wrapper">
             <aside class="jobs__sidebar">
@@ -388,7 +388,7 @@
 
             <div class="jobs__content">
               <div class="jobs__toolbar">
-                <p class="jobs__result">Showing 6-6 of 10 results</p>
+                <p class="jobs__result">Showing 1-6 of 10 results</p>
                 <div class="jobs__sort-wrapper">
                   <select class="jobs__sort">
                     <option value="latest">Sort by latest</option>
@@ -405,7 +405,7 @@
                 </div>
               </div>
 
-              <ul class="jobs__list">
+              <ul class="page-jobs__list">
                 <li class="jobs__item">
                   <article class="job-card">
                     <div class="job-card__top">
@@ -451,7 +451,7 @@
                         </li>
                       </ul>
 
-                      <div class="jobs__details">
+                      <div class="job-card__details">
                         <a class="button" href="job-details.html"
                           >Job Details</a
                         >
@@ -874,13 +874,17 @@
               <p class="footer__news-desc">
                 Eu nunc pretium vitae platea. Non netus elementum vulputate
               </p>
-              <input
-                class="footer__input"
-                id="newsletter-email"
-                type="email"
-                placeholder="Email Address"
-              />
-              <a class="button footer__button" href="#">Subscribe now</a>
+              <form class="footer-form">
+                <input
+                  class="footer__input"
+                  id="newsletter-email"
+                  type="email"
+                  placeholder="Email Address"
+                />
+                <button type="submit" class="button footer__button">
+                  Subscribe now
+                </button>
+              </form>
             </div>
           </div>
 

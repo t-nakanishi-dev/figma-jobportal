@@ -30,14 +30,14 @@
               <li class="header__item">
                 <a href="index.html">Home</a>
               </li>
-              <li class="header__item is-active">
+              <li class="header__item">
                 <a href="jobs.html">Jobs</a>
               </li>
               <li class="header__item">
-                <a href="about.html">About Us</a>
+                <a href="about-us.html">About Us</a>
               </li>
               <li class="header__item">
-                <a href="contact.html">Contact Us</a>
+                <a href="contact-us.html">Contact Us</a>
               </li>
             </ul>
           </nav>
@@ -58,10 +58,10 @@
         </div>
       </section>
 
-      <article class="job-details">
+      <div class="job-details">
         <div class="container">
           <div class="job-details__wrapper">
-            <header class="job-details__header">
+            <div class="job-details__header">
               <div class="jobs__item">
                 <article class="job-card">
                   <div class="job-card__top">
@@ -113,7 +113,7 @@
                   </div>
                 </article>
               </div>
-            </header>
+            </div>
             <div class="job-details__content">
               <div class="job-details__body">
                 <section class="job-details__group">
@@ -622,7 +622,7 @@
                     ></textarea>
                   </div>
 
-                  <button class="button job-message__button">
+                  <button class="button job-message__button" type="submit">
                     Send Message
                   </button>
                 </form>
@@ -630,7 +630,7 @@
             </aside>
           </div>
         </div>
-      </article>
+      </div>
     </main>
     <footer class="footer">
       <div class="container">
@@ -673,13 +673,17 @@
               <p class="footer__news-desc">
                 Eu nunc pretium vitae platea. Non netus elementum vulputate
               </p>
-              <input
-                class="footer__input"
-                id="newsletter-email"
-                type="email"
-                placeholder="Email Address"
-              />
-              <a class="button footer__button" href="#">Subscribe now</a>
+              <form class="footer-form">
+                <input
+                  class="footer__input"
+                  id="newsletter-email"
+                  type="email"
+                  placeholder="Email Address"
+                />
+                <button type="submit" class="button footer__button">
+                  Subscribe now
+                </button>
+              </form>
             </div>
           </div>
 

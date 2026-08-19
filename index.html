@@ -21,23 +21,23 @@
     <header class="header">
       <div class="container">
         <div class="header__wrapper">
-          <a href="#" class="header__logo">
+          <a href="index.html" class="header__logo">
             <img src="images/sitelogo.svg" alt="" />
             <span>Job Portal</span>
           </a>
           <nav class="header__nav">
             <ul class="header__list">
-              <li class="header__item">
-                <a href="#">Home</a>
+              <li class="header__item is-active">
+                <a href="index.html">Home</a>
               </li>
               <li class="header__item">
-                <a href="#">Jobs</a>
+                <a href="jobs.html">Jobs</a>
               </li>
               <li class="header__item">
-                <a href="#">About Us</a>
+                <a href="about-us.html">About Us</a>
               </li>
               <li class="header__item">
-                <a href="#">Contact Us</a>
+                <a href="contact-us.html">Contact Us</a>
               </li>
             </ul>
           </nav>
@@ -863,13 +863,17 @@
               <p class="footer__news-desc">
                 Eu nunc pretium vitae platea. Non netus elementum vulputate
               </p>
-              <input
-                class="footer__input"
-                id="newsletter-email"
-                type="email"
-                placeholder="Email Address"
-              />
-              <a class="button footer__button" href="#">Subscribe now</a>
+              <form class="footer-form">
+                <input
+                  class="footer__input"
+                  id="newsletter-email"
+                  type="email"
+                  placeholder="Email Address"
+                />
+                <button type="submit" class="button footer__button">
+                  Subscribe now
+                </button>
+              </form>
             </div>
           </div>
 
