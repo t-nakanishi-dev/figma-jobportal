@@ -2623,8 +2623,28 @@ a.contact__value:hover {
   }
 
   /* Job Details */
+  .job-details {
+    padding-block: 40px;
+  }
+
+  .job-details__wrapper {
+    grid-template-columns: 1fr;
+  }
+
+  .job-details__header {
+    order: 1;
+  }
+
+  .job-details__sidebar {
+    order: 2;
+  }
+
+  .job-details__content {
+    order: 3;
+  }
+
   .job-details__header .jobs__item {
-    padding: 24px;
+    padding: 0px;
   }
 
   .related-jobs__title {
