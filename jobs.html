@@ -25,6 +25,18 @@
             <img src="images/sitelogo.svg" alt="" />
             <span>Job Portal</span>
           </a>
+
+          <button
+            class="header__hamburger"
+            type="button"
+            aria-label="メニューを開く"
+            aria-expanded="false"
+          >
+            <span class="header__hamburger-line"></span>
+            <span class="header__hamburger-line"></span>
+            <span class="header__hamburger-line"></span>
+          </button>
+
           <nav class="header__nav">
             <ul class="header__list">
               <li class="header__item">
@@ -40,8 +52,13 @@
                 <a href="contact-us.html">Contact Us</a>
               </li>
             </ul>
+            <div class="header__actions header__actions--mobile">
+              <a href="#">Login</a>
+              <a class="button" href="#">Register</a>
+            </div>
           </nav>
-          <div class="header__actions">
+
+          <div class="header__actions header__actions--desktop">
             <a href="#">Login</a>
             <a class="button" href="#">Register</a>
           </div>
@@ -438,7 +455,7 @@
                           <span>Hotels & Tourism</span>
                         </li>
                         <li class="job-card__meta-item">
-                          <img src="images/clock.svg" alt="" />
+                          <img src="images/clock-job-card.svg" alt="" />
                           <span>Full time</span>
                         </li>
                         <li class="job-card__meta-item">
@@ -491,7 +508,7 @@
                           <span>Media</span>
                         </li>
                         <li class="job-card__meta-item">
-                          <img src="images/clock.svg" alt="" />
+                          <img src="images/clock-job-card.svg" alt="" />
                           <span>Part time</span>
                         </li>
                         <li class="job-card__meta-item">
@@ -546,7 +563,7 @@
                           <span>Construction</span>
                         </li>
                         <li class="job-card__meta-item">
-                          <img src="images/clock.svg" alt="" />
+                          <img src="images/clock-job-card.svg" alt="" />
                           <span>Full time</span>
                         </li>
                         <li class="job-card__meta-item">
@@ -599,7 +616,7 @@
                           <span>Commerce</span>
                         </li>
                         <li class="job-card__meta-item">
-                          <img src="images/clock.svg" alt="" />
+                          <img src="images/clock-job-card.svg" alt="" />
                           <span>Full time</span>
                         </li>
                         <li class="job-card__meta-item">
@@ -654,7 +671,7 @@
                           <span>Commerce</span>
                         </li>
                         <li class="job-card__meta-item">
-                          <img src="images/clock.svg" alt="" />
+                          <img src="images/clock-job-card.svg" alt="" />
                           <span>Full time</span>
                         </li>
                         <li class="job-card__meta-item">
@@ -707,7 +724,7 @@
                           <span>Financial services</span>
                         </li>
                         <li class="job-card__meta-item">
-                          <img src="images/clock.svg" alt="" />
+                          <img src="images/clock-job-card.svg" alt="" />
                           <span>Full time</span>
                         </li>
                         <li class="job-card__meta-item">
@@ -874,7 +891,7 @@
               <p class="footer__news-desc">
                 Eu nunc pretium vitae platea. Non netus elementum vulputate
               </p>
-              <form class="footer-form">
+              <form class="footer__form">
                 <input
                   class="footer__input"
                   id="newsletter-email"
@@ -900,5 +917,6 @@
         </div>
       </div>
     </footer>
+    <script src="./js/main.js"></script>
   </body>
 </html>
