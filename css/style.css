@@ -948,7 +948,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 8px;
+}
+
+.jobs__pagination-pages {
+  display: flex;
+  gap: 24px;
 }
 
 .jobs__pagination-link {
@@ -2232,7 +2236,7 @@ a.contact__value:hover {
     padding-block: 60px;
   }
 
-  .jobs__wrapper{
+  .jobs__wrapper {
     display: flex;
     flex-direction: column;
     gap: 60px;
@@ -2262,7 +2266,6 @@ a.contact__value:hover {
     justify-content: center;
     align-items: center;
     text-align: center;
-    /* margin-top: 60px; */
     font-size: 24px;
     font-weight: 600;
   }
@@ -2376,7 +2379,7 @@ a.contact__value:hover {
     justify-content: center;
   }
 
-  .about__stats{
+  .about__stats {
     padding-block: 40px;
   }
 
@@ -2398,13 +2401,13 @@ a.contact__value:hover {
     line-height: 1;
   }
 
-  .about__label{
+  .about__label {
     font-size: 24px;
     font-weight: 600;
     line-height: 1;
   }
 
-  .about__info{
+  .about__info {
     font-size: 16px;
     font-weight: 500;
   }
@@ -2425,10 +2428,6 @@ a.contact__value:hover {
     font-size: 28px;
   }
 
-  .banner__desc{
-
-  }
-
   .banner__left {
     gap: 32px;
   }
@@ -2437,7 +2436,7 @@ a.contact__value:hover {
     gap: 16px;
   }
 
-    .banner__left .button{
+  .banner__left .button {
     width: 100%;
   }
 
@@ -2446,9 +2445,9 @@ a.contact__value:hover {
     padding-block: 60px;
   }
 
-   .testimonial__wrapper{
+  .testimonial__wrapper {
     gap: 40px;
-   }
+  }
 
   .testimonial__header {
     gap: 40px;
@@ -2480,8 +2479,8 @@ a.contact__value:hover {
   }
 
   .blog__wrapper {
-  gap: 40px;
-}
+    gap: 40px;
+  }
 
   .blog__text {
     display: flex;
@@ -2506,12 +2505,12 @@ a.contact__value:hover {
   }
 
   .blog__genre {
-  left: 15px;
-}
+    left: 15px;
+  }
 
-.blog__content{
-  gap: 24px;
-}
+  .blog__content {
+    gap: 24px;
+  }
 
   .blog__headline {
     font-size: 20px;
@@ -2530,11 +2529,11 @@ a.contact__value:hover {
   }
 
   .footer__col {
-  display: flex;
-  flex-direction: column;
+    display: flex;
+    flex-direction: column;
 
-  align-items: center;
-}
+    align-items: center;
+  }
 
   .footer__col--brand,
   .footer__col--news {
@@ -2551,7 +2550,7 @@ a.contact__value:hover {
     text-align: center;
   }
 
-  .footer__form{
+  .footer__form {
     width: 100%;
   }
 
@@ -2559,14 +2558,14 @@ a.contact__value:hover {
     display: none;
   }
 
-  .footer__addition--mobile{
+  .footer__addition--mobile {
     display: flex;
     justify-content: center;
     gap: 20px;
     text-decoration: underline;
   }
 
-  .footer__copy{
+  .footer__copy {
     font-size: 14px;
     font-weight: 500;
     color: rgba(255, 255, 255, 0.5);
@@ -2585,13 +2584,42 @@ a.contact__value:hover {
 
   /* Jobs Listing */
 
+  /* Jobsページ専用（サイドバーがある場合だけ） */
+  .jobs__wrapper:has(.jobs__sidebar) {
+    grid-template-columns: 1fr;
+  }
+
+  .job-filter {
+    gap: 24px;
+  }
+
+  .job-filter__button {
+    height: 50px;
+    font-size: 20px;
+    font-weight: 700;
+  }
+
+  .job-filter__group {
+    gap: 20px;
+  }
+
+  .job-filter__salary-text {
+    font-size: 16px;
+    font-weight: 600;
+    color: #000;
+  }
+
   .jobs__toolbar {
     flex-direction: column;
     align-items: flex-start;
   }
 
-  .job-filter {
-    padding: 24px 20px;
+  .jobs__pagination-list {
+    justify-content: space-between;
+  }
+
+  .jobs__pagination-pages {
+    gap: 12px;
   }
 
   /* Job Details */
