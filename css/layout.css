@@ -151,9 +151,12 @@
   display: flex;
   justify-content: space-between;
 }
-.footer__addition {
+.footer__addition--desktop {
   display: flex;
   gap: 20px;
+}
+.footer__addition--mobile{
+  display: none;
 }
 .footer__form {
   display: flex;
