@@ -1577,7 +1577,7 @@
   right: 0;
   bottom: 0;
 
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.9);
   padding: 45px 70px;
 }
 
@@ -2203,6 +2203,7 @@ a.contact__value:hover {
 
   .hero__stat {
     display: flex;
+    justify-content: center;
     align-items: center;
     gap: 6px;
     min-width: 0;
@@ -2244,6 +2245,7 @@ a.contact__value:hover {
 
   .jobs__header {
     flex-direction: column;
+    align-items: center;
     gap: 16px;
     padding-bottom: 0px;
   }
@@ -2482,6 +2484,10 @@ a.contact__value:hover {
     gap: 40px;
   }
 
+  .blog__header {
+    justify-content: center;
+  }
+
   .blog__text {
     display: flex;
     flex-direction: column;
@@ -2648,7 +2654,7 @@ a.contact__value:hover {
   }
 
   .related-jobs__title {
-    font-size: 32px;
+    font-size: 40px;
   }
 
   /* Top Company */
@@ -2663,6 +2669,7 @@ a.contact__value:hover {
   /* About Page */
   .about-intro__header {
     grid-template-columns: 1fr;
+    text-align: center;
   }
 
   .about-intro__img {
@@ -2736,12 +2743,18 @@ a.contact__value:hover {
 
   .faq__item {
     padding: 24px 16px;
-    flex-direction: column;
+    flex-direction: flex;
     gap: 12px;
   }
 
   .faq__question {
     font-size: 18px;
+  }
+
+  /* About Blog */
+  .about-blog__header {
+    justify-content: center;
+    text-align: center;
   }
 
   /* About Best */
@@ -2750,6 +2763,19 @@ a.contact__value:hover {
   }
 
   /* Contact Page */
+  .contact__wrapper {
+    grid-template-columns: 1fr;
+  }
+
+  .contact__info {
+    align-items: center;
+  }
+
+  .contact__header {
+    align-items: center;
+    text-align: center;
+  }
+
   .contact__title {
     font-size: 32px;
   }
@@ -2757,6 +2783,10 @@ a.contact__value:hover {
   .contact__list {
     grid-template-columns: 1fr;
     gap: 32px;
+  }
+
+  .contact__item {
+    align-items: center;
   }
 
   .contact-form__row {
