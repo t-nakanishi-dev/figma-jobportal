@@ -2,29 +2,17 @@
 
 ## 🔗 デプロイURL
 
-現在デプロイしていません。
+https://t-nakanishi-dev.com/works/html-css/figma/jobportal/
 
 ## 📸 スクリーンショット
 
 ### 🏠 Home
 
-<!-- スクリーンショットを追加 -->
+![Job Portal - Home](images/figma_jobportal_home.webp)
 
 ### 💼 Jobs
 
-<!-- スクリーンショットを追加 -->
-
-### 📄 Job Details
-
-<!-- スクリーンショットを追加 -->
-
-### ℹ️ About Us
-
-<!-- スクリーンショットを追加 -->
-
-### 📩 Contact Us
-
-<!-- スクリーンショットを追加 -->
+![Job Portal - Jobs](images/figma_jobportal_jobs.webp)
 
 ## 📝 アプリ概要
 
@@ -33,8 +21,6 @@ Figmaのデザインをもとに制作した、求人情報を探すためのWeb
 Home、Jobs、Job Details、About Us、Contact Usの5ページを制作し、PC・スマートフォンの両方に対応したレスポンシブデザインを実装しています。
 
 求人カードやカテゴリ、企業情報、FAQ、お問い合わせフォームなど、求人サイトで使用されるUIを複数ページにわたって構築しました。
-
-※Figmaデザインの再現を優先しているため、一部のUIは、現時点ではデザインとしてのみ実装しております。
 
 ## 🔧 使用技術
 
